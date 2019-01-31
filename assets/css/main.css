@@ -1,3 +1,7 @@
+* {
+	border: 2px solid black;
+	margin: 5px;
+}
 body {
     color: #fff;
     font-family: 'Nunito Semibold';
@@ -19,8 +23,8 @@ body {
     	"section section section section"
     	"section section section section";
 }
-/* desktop grid */
 
+/* desktop grid */
 @media screen and (min-width: 760px) {
     #content {
         display: grid;
@@ -53,6 +57,12 @@ aside {
 }
 nav {
     grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0px;
 }
 section {
     grid-area: section;
